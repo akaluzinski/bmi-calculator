@@ -209,7 +209,6 @@
                     </view>
                     <connections>
                         <outlet property="adviceAction" destination="9IV-CT-mxw" id="xw5-ZG-O2F"/>
-                        <outlet property="adviceLabel" destination="9IV-CT-mxw" id="FiX-oW-OVr"/>
                         <outlet property="bmiLabel" destination="VU9-2W-Sd5" id="eKi-m9-BTM"/>
                     </connections>
                 </viewController>
