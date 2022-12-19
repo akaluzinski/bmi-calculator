@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewController: UIViewController {
+class CalculateViewController: UIViewController {
     @IBOutlet weak var heightLabel: UILabel!
     @IBOutlet weak var weightLabel: UILabel!
     
@@ -12,9 +12,7 @@ class ViewController: UIViewController {
         let weight = weightSlider.value;
         let bmi = Double(weight/pow(height, 2))
         
-        let secondVC = SecondViewController()
-        secondVC.bmi = bmi
-        self.present(secondVC, animated: true, completion: nil)
+        self.performSegue(withIdentifier: "goToResult", sender: self)
     }
     
     @IBAction func heightSliderChanged(_ sender: UISlider) {
